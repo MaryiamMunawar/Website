@@ -1,0 +1,124 @@
+.app__specialMenu {
+  flex-direction: column;
+  color: var(--color-black);
+  background-color:#0C0C0C;
+}
+
+/* .specialmenu-section {
+  background-color:#0C0C0C;
+  flex-direction: column;
+  color: var(--color-white);
+} */
+
+.app__specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app__specialMenu-menu {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: center; 
+  flex-wrap: wrap;
+}
+
+.app__specialMenu-menu_heading {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.app__specialMenu-menu_beverages,
+.app__specialMenu-menu_soup {
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; 
+  
+}
+
+.app__specialMenu-menu_img {
+  width: 293px;
+  height: 650px;
+  margin: 0 2rem;
+  display: flex;
+ /* justify-content: center; Center-align the image */
+}
+
+.app__specialMenu-menu_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app__specialMenu_menu_items {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* .menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+} */
+
+.menu-item-title {
+  font-weight: 600;
+}
+
+.menu-item-price {
+  font-weight: bold;
+}
+
+@media screen and(max-width:2000px) {
+  .app__specialMenu-menu_img{
+    width: 650px;
+  }
+  .app__specialMenu-menu_img img{
+    height: 920px;
+  }
+  
+}
+
+@media screen and (max-width: 1150px) {
+    .app__specialMenu-menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .app__specialMenu-menu_img {
+      margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+  .app__specialMenu-menu_img {
+   width: 50%;
+
+  }
+ .app__specialMenu-menu_heading {
+   font-size: 35px;
+   line-height: 48.5px;
+  } 
+   
+}
+
+
+/* .app__specialMenu-menu_img {
+      width: 200px;
+      height: 400px;
+      margin: 0 2rem;
+      display: flex;
+      justify-content: center; Center-align the image 
+    } */
+    
